@@ -5,7 +5,9 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22A_Lab01_WartDaniel", "CIS22A_Lab01_WartDaniel\CIS22A_Lab01_WartDaniel.vcxproj", "{0AB68940-6656-45E4-8C3A-CC2B24A92D08}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22A_S17_HelloWorld", "..\CIS22A_S17_HelloWorld\CIS22A_S17_HelloWorld\CIS22A_S17_HelloWorld.vcxproj", "{0D793DD9-7000-4087-A69E-27603F97D27A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22A_S17_Testbed", "..\CIS22A_S17_HelloWorld\CIS22A_S17_HelloWorld\CIS22A_S17_HelloWorld.vcxproj", "{0D793DD9-7000-4087-A69E-27603F97D27A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22A_Lab01B_WartDaniel", "CIS22A_Lab01B_WartDaniel\CIS22A_Lab01B_WartDaniel.vcxproj", "{417F54C7-575D-4CB1-BB08-E8CB79629B0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0D793DD9-7000-4087-A69E-27603F97D27A}.Debug|Win32.Build.0 = Debug|Win32
 		{0D793DD9-7000-4087-A69E-27603F97D27A}.Release|Win32.ActiveCfg = Release|Win32
 		{0D793DD9-7000-4087-A69E-27603F97D27A}.Release|Win32.Build.0 = Release|Win32
+		{417F54C7-575D-4CB1-BB08-E8CB79629B0D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{417F54C7-575D-4CB1-BB08-E8CB79629B0D}.Debug|Win32.Build.0 = Debug|Win32
+		{417F54C7-575D-4CB1-BB08-E8CB79629B0D}.Release|Win32.ActiveCfg = Release|Win32
+		{417F54C7-575D-4CB1-BB08-E8CB79629B0D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
