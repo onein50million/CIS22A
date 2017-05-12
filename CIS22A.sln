@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22A_S17_Testbed", "..\CI
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22A_Lab01B_WartDaniel", "CIS22A_Lab01B_WartDaniel\CIS22A_Lab01B_WartDaniel.vcxproj", "{417F54C7-575D-4CB1-BB08-E8CB79629B0D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22A_EC1_WartDaniel", "Project1\Project1.vcxproj", "{A17A2B8E-0DE9-4DB7-909A-C21FC2A0C39B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22AS17_WartDaniel", "CIS22AS17_WartDaniel\CIS22AS17_WartDaniel.vcxproj", "{03DA46A9-CDC0-4929-AB36-2C0EED97BD55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +31,14 @@ Global
 		{417F54C7-575D-4CB1-BB08-E8CB79629B0D}.Debug|Win32.Build.0 = Debug|Win32
 		{417F54C7-575D-4CB1-BB08-E8CB79629B0D}.Release|Win32.ActiveCfg = Release|Win32
 		{417F54C7-575D-4CB1-BB08-E8CB79629B0D}.Release|Win32.Build.0 = Release|Win32
+		{A17A2B8E-0DE9-4DB7-909A-C21FC2A0C39B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A17A2B8E-0DE9-4DB7-909A-C21FC2A0C39B}.Debug|Win32.Build.0 = Debug|Win32
+		{A17A2B8E-0DE9-4DB7-909A-C21FC2A0C39B}.Release|Win32.ActiveCfg = Release|Win32
+		{A17A2B8E-0DE9-4DB7-909A-C21FC2A0C39B}.Release|Win32.Build.0 = Release|Win32
+		{03DA46A9-CDC0-4929-AB36-2C0EED97BD55}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03DA46A9-CDC0-4929-AB36-2C0EED97BD55}.Debug|Win32.Build.0 = Debug|Win32
+		{03DA46A9-CDC0-4929-AB36-2C0EED97BD55}.Release|Win32.ActiveCfg = Release|Win32
+		{03DA46A9-CDC0-4929-AB36-2C0EED97BD55}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
