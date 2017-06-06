@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22A_Lab01_WartDaniel", "CIS22A_Lab01_WartDaniel\CIS22A_Lab01_WartDaniel.vcxproj", "{0AB68940-6656-45E4-8C3A-CC2B24A92D08}"
 EndProject
@@ -11,7 +11,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22A_Lab01B_WartDaniel", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22A_EC1_WartDaniel", "Project1\Project1.vcxproj", "{A17A2B8E-0DE9-4DB7-909A-C21FC2A0C39B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22AS17_WartDaniel", "CIS22AS17_WartDaniel\CIS22AS17_WartDaniel.vcxproj", "{03DA46A9-CDC0-4929-AB36-2C0EED97BD55}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS22AS17_Lab2_WartDaniel", "CIS22AS17_WartDaniel\CIS22AS17_WartDaniel.vcxproj", "{03DA46A9-CDC0-4929-AB36-2C0EED97BD55}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab3_22AS17_WartDaniel", "Lab3_22AS17_WartDaniel\Lab3_22AS17_WartDaniel.vcxproj", "{78483078-6343-48C6-BE51-3E66C1BD2160}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{03DA46A9-CDC0-4929-AB36-2C0EED97BD55}.Debug|Win32.Build.0 = Debug|Win32
 		{03DA46A9-CDC0-4929-AB36-2C0EED97BD55}.Release|Win32.ActiveCfg = Release|Win32
 		{03DA46A9-CDC0-4929-AB36-2C0EED97BD55}.Release|Win32.Build.0 = Release|Win32
+		{78483078-6343-48C6-BE51-3E66C1BD2160}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78483078-6343-48C6-BE51-3E66C1BD2160}.Debug|Win32.Build.0 = Debug|Win32
+		{78483078-6343-48C6-BE51-3E66C1BD2160}.Release|Win32.ActiveCfg = Release|Win32
+		{78483078-6343-48C6-BE51-3E66C1BD2160}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
