@@ -3,31 +3,29 @@
 #include <string>
 
 int main(){
-	std::ifstream file_to_copy;
-	std::string file_name;
-	std::string output_name;
+	std::ifstream source_file;
+	std::string source_name;
+	std::ofstream destination_file;
+	std::string destination_name;
+
 	std::cout << "Enter a file name to copy\n";
 	while (true){
-		std::getline(std::cin ,file_name);
-		file_to_copy.open(file_name);
-		if (!file_to_copy)
+		std::getline(std::cin ,source_name);
+		source_file.open(source_name, std::ios::binary);
+		if (!source_file)
 			std::cout << "Invalid file\n";
 		else
 			break;
 	}
 	std::cout << "Enter an output location and name\n";
-	std::getline(std::cin, output_name);
-	
-	std::ofstream output_file;
-	output_file.open(output_name);
-	std::string transfer;
-	while (file_to_copy){	
-		transfer = "";
-		file_to_copy >> transfer;
-		output_file << transfer;
+	std::getline(std::cin, destination_name);
+	destination_file.open(destination_name, std::ios::binary);
+	char transfer;
+	while (source_file.get(transfer)){
+		destination_file << transfer;
 	}
-	file_to_copy.close();
-	output_file.close();
+	source_file.close();
+	destination_file.close();
 	std::cin.get();
 	return 0;
 }
