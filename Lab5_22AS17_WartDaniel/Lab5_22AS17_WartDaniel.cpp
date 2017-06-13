@@ -1,31 +1,11 @@
-// CIS 22A
-// Lab 3: Property Tax
-// Name: Daniel Wart
-/*
-user input into num_properties(int)
-for(i = 0; i < num_properties; i++):
-	user input into property_value(double), senior_citizen(bool)
-	if senior_citizen:
-		user input into quarterly_payment(bool)
-	taxable_value = property_value*0.6
-	if senior citizen:
-		taxable_value *= 0.9
-	if quarterly_payments:
-		payment = tax_amount / 4.0
-	else:
-		payment = tax_amount
-	output right align, 2 decimal places:
-		property_value
-		property_value*0.6
-		senior_citizen
-		property_value*0.6*0.1
-		taxable_value
-		tax_amount
-		payment
-*/
+//Daniel Wart
+//Lab 5: lab 3 with file output
+//CIS 22A
+
 #include <string>
 #include <iostream>
 #include <iomanip>
+#include <fstream>
 
 //Gets input from input stream "stream" and outputs to generic type "output"
 template <class T>
@@ -56,19 +36,31 @@ int main(){
 	double taxable_value;
 	double tax_amount;
 	double payment;
-	std::cout << "How many properties should be generated?\n";
-	GetInput(std::cin, num_properties);
 
-	for (int i = 0; i < num_properties; i ++){
-		std::cout << "What is the value of the property?\n";
+	//files
+	std::ofstream log_file;
+	log_file.open("property_tax.log");
+	std::cout << "The following information will be written into 'property_tax.log'\n";
+	std::cout << "How many properties should be generated?\n"; log_file << "How many properties should be generated?\n";
+	GetInput(std::cin, num_properties);
+	log_file << num_properties << '\n';
+
+	for (int i = 0; i < num_properties; i++){
+		std::cout << "What is the value of the property?\n"; log_file << "What is the value of the property?\n";
 		GetInput(std::cin, property_value);
-		std::cout << "Is the owner a senior citizen?\n";
+		log_file << property_value << '\n';
+
+		std::cout << "Is the owner a senior citizen?\n"; log_file << "Is the owner a senior citizen?\n";
 		std::getline(std::cin, input);
+		log_file << input << '\n';
+
 		senior_citizen = input.compare("Yes") == 0 ? true : false;
 
 		if (senior_citizen){
-			std::cout << "Is the payment quarterly or annually?\n";
+			std::cout << "Is the payment quarterly or annually?\n"; log_file << "Is the payment quarterly or annually?\n";
 			std::getline(std::cin, input);
+			log_file << input << '\n';
+
 			quarterly_payments = input.compare("Quarterly") == 0 ? true : false;
 		}
 		else{
@@ -103,9 +95,25 @@ int main(){
 			std::cout << std::left << std::setw(width) << "Quarterly payment: " << std::right << std::setw(width) << '$' << payment << '\n';
 		}
 		std::cout << '\n';
+
+		//file output
+		log_file << std::setprecision(2) << std::setw(width) << std::fixed;
+		log_file << std::left << std::setw(width) << "Value of property: " << std::right << std::setw(width) << '$' << property_value << '\n';
+		log_file << std::left << std::setw(width) << "Taxable portion: " << std::right << std::setw(width) << '$' << property_value*0.6 << '\n';
+		log_file << std::left << std::setw(width) << "Senior citizen: " << std::right << std::setw(width) << (senior_citizen ? 'Y' : 'N') << '\n';
+		if (senior_citizen){
+			log_file << std::left << std::setw(width) << "Senior citizen exemption: " << std::right << std::setw(width) << '$' << property_value*0.6*0.1 << '\n';
+		}
+		log_file << std::left << std::setw(width) << "Net taxable portion: " << std::right << std::setw(width) << '$' << taxable_value << '\n';
+		log_file << std::left << std::setw(width) << "Tax amount: " << std::right << std::setw(width) << '$' << tax_amount << '\n';
+		log_file << std::left << std::setw(width) << "Number of payments: " << std::right << std::setw(width) << (quarterly_payments ? '4' : '1') << '\n';
+		if (quarterly_payments){
+			log_file << std::left << std::setw(width) << "Quarterly payment: " << std::right << std::setw(width) << '$' << payment << '\n';
+		}
+		log_file << '\n';
 	}
 
-
+	log_file.close();
 	std::cin.get();
 	return 0;
 }
