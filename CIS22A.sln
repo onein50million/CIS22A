@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab5_22AS17_WartDaniel", "L
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab6_22AS17_WartDaniel", "Lab6_22AS17_WartDaniel\Lab6_22AS17_WartDaniel.vcxproj", "{3B2A8331-5993-43CA-A0E4-7DB729FAB84E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab7_22AS17_WartDaniel", "Lab7_22AS17_WartDaniel\Lab7_22AS17_WartDaniel.vcxproj", "{8A8E371B-9DE9-4DF5-89A5-2B56A254E884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -63,6 +65,10 @@ Global
 		{3B2A8331-5993-43CA-A0E4-7DB729FAB84E}.Debug|Win32.Build.0 = Debug|Win32
 		{3B2A8331-5993-43CA-A0E4-7DB729FAB84E}.Release|Win32.ActiveCfg = Release|Win32
 		{3B2A8331-5993-43CA-A0E4-7DB729FAB84E}.Release|Win32.Build.0 = Release|Win32
+		{8A8E371B-9DE9-4DF5-89A5-2B56A254E884}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8A8E371B-9DE9-4DF5-89A5-2B56A254E884}.Debug|Win32.Build.0 = Debug|Win32
+		{8A8E371B-9DE9-4DF5-89A5-2B56A254E884}.Release|Win32.ActiveCfg = Release|Win32
+		{8A8E371B-9DE9-4DF5-89A5-2B56A254E884}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
