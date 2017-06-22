@@ -47,6 +47,10 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <HeapCommitSize>
+      </HeapCommitSize>
+      <HeapReserveSize>
+      </HeapReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
